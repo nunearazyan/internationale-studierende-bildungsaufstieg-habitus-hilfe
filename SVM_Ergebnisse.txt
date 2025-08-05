@@ -1,0 +1,1471 @@
+ERGEBNISSE DER KLASSIFIZIERUNG MIT SVC
+
+LDA: 
+Optimale Parameter: {'svc__C': 1, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                       precision    recall  f1-score   support
+
+       Deutsch un/ EU       0.89      0.40      0.55        20
+Nicht-EU / Staatenlos       0.14      0.67      0.24         3
+
+             accuracy                           0.43        23
+            macro avg       0.52      0.53      0.39        23
+         weighted avg       0.79      0.43      0.51        23
+
+Optimale Parameter: {'svc__C': 1, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                                  precision    recall  f1-score   support
+
+Einwanderungs- geschichte tiefer       0.00      0.00      0.00         3
+  beide Elternteile eingewandert       0.12      0.50      0.20         2
+     ein Elternteil eingewandert       0.17      1.00      0.29         1
+                 nicht vorhanden       0.50      0.14      0.22        14
+             nur TN eingewandert       1.00      0.67      0.80         3
+
+                        accuracy                           0.26        23
+                       macro avg       0.36      0.46      0.30        23
+                    weighted avg       0.45      0.26      0.27        23
+
+Top 10 Features für Klasse 'nur TN eingewandert':
+verstehen | deutsch | politisch | lernen | merken: 0.5653
+freund | zuhause | finden | leute | studium: 0.4858
+deutsch | umgebung | hochschule | dialekt | empfinden: 0.4128
+umfeld | freund | seminar | essen | meist: 0.3819
+persönlichkeit | verdienen | teuer | arbeiten | denken: 0.3409
+eltern | freund | heimat | wortwahl | person: 0.3352
+heimat | studierende | deutsch | meinung | deutschland: 0.3073
+spüren | vollständig | leben | situation | thema: 0.2702
+leben | versuchen | problem | denken | persönlichkeit: 0.2429
+eltern | freundin | manchmal | dialekt | verändern: 0.2363
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                                                    precision    recall  f1-score   support
+
+                       Bildungsausländer*innen, AT       0.25      1.00      0.40         3
+                            Bildungsinländer*innen       1.00      0.55      0.71        20
+
+                                          accuracy                           0.61        23
+                                         macro avg       0.62      0.78      0.55        23
+                                      weighted avg       0.90      0.61      0.67        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 1, 'svc__kernel': 'rbf'}
+                                           precision    recall  f1-score   support
+
+      Muttersprache neben anderer Sprache       0.00      0.00      0.00         2
+                Muttersprache nur Deutsch       0.82      0.53      0.64        17
+        Spracherwerb im erwachsenen Alter       0.17      1.00      0.29         1
+Spracherwerb im jungen Alter außerhalb DE       0.33      0.50      0.40         2
+       Spracherwerb im jungen Alter in DE       0.00      0.00      0.00         1
+
+                                 accuracy                           0.48        23
+                                macro avg       0.26      0.41      0.27        23
+                             weighted avg       0.64      0.48      0.52        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'auto', 'svc__kernel': 'rbf'}
+                    precision    recall  f1-score   support
+
+ beide Elternteile       0.08      1.00      0.14         1
+      beide keinen       0.80      0.22      0.35        18
+nur ein Elternteil       0.20      0.25      0.22         4
+
+          accuracy                           0.26        23
+         macro avg       0.36      0.49      0.24        23
+      weighted avg       0.66      0.26      0.32        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'auto', 'svc__kernel': 'rbf'}
+                                                                                                precision    recall  f1-score   support
+
+ Geld reichte für ein Teil der grundlegenden Bedürfnisse mit Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+Geld reichte für ein Teil der grundlegenden Bedürfnisse ohne Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+                                               Geld reichte für grundlegende Bedürfnisse knapp       0.00      0.00      0.00         3
+          Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben mit Finanzplanung       0.33      0.08      0.13        12
+         Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben ohne Finanzplanung       0.00      0.00      0.00         1
+                                         Geld reichte für grundlegende Bedürfnisse vollständig       0.20      0.20      0.20         5
+
+                                                                                      accuracy           
+                													 0.09        23
+                                                                                     macro avg       0.09      0.05      0.06        23
+                                                                                  weighted avg       0.22      0.09      0.11        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+              precision    recall  f1-score   support
+
+  Hochschule       0.27      0.43      0.33         7
+ Universität       0.67      0.50      0.57        16
+
+    accuracy                           0.48        23
+   macro avg       0.47      0.46      0.45        23
+weighted avg       0.55      0.48      0.50        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'auto', 'svc__kernel': 'rbf'}
+                                                                                  precision    recall  f1-score   support
+
+Erziehungswissenschaften / Sozialwesen / Bildungswissenschaften / Soziale Arbeit       0.00      0.00      0.00         6
+                                                           Geisteswissenschaften       0.00      0.00      0.00         3
+                                                                         Lehramt       0.00      0.00      0.00         2
+                             Mathematik / Informatik und Ingenieurwissenschaften       0.00      0.00      0.00         3
+                   Medizin, Gesundheits- und Naturwissenschaften und Psychologie       0.00      0.00      0.00         4
+                                                                       Sonstiges       0.00      0.00      0.00         1
+                                           Sozial- und Wirtschaftswissenschaften       0.17      0.25      0.20         4
+
+                                                                        accuracy                         
+  													   0.04        23
+                                                                       macro avg       0.02      0.04      0.03        23
+                                                                    weighted avg       0.03      0.04      0.03        23
+
+BERTopic:
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 'scale', 'svc__kernel': 'poly'}
+                       precision    recall  f1-score   support
+
+       Deutsch / EU       0.90      0.95      0.93        20
+Nicht-EU / Staatenlos       0.50      0.33      0.40         3
+
+             accuracy                           0.87        23
+            macro avg       0.70      0.64      0.66        23
+         weighted avg       0.85      0.87      0.86        23
+
+Top 10 Features für Klasse 'Deutsch / EU':
+studium | studieren | anpassen | versuchen | eltern: 0.2649
+umfeld | fühlen | welt | alt | akademisch: 0.2182
+akademisch | gefühl | familie | gewiß | fühlen: 0.1949
+anpassen | versuchen | fühlen | zuhause | bewußt: 0.1910
+versuchen | einfach | eher | sprechen | gespräch: 0.1820
+fühlen | welt | zugehörig | zuhause | stehen: 0.1817
+umfeld | familie | hochschule | sprechen | studium: 0.1730
+eltern | geld | studium | usw | essen: 0.1704
+frage | studium | eltern | hochschule | klar: 0.1701
+arbeiten | schichtsystem | gehalt | sparsam | krankenhaus: 0.1685
+
+Optimale Parameter: {'svc__C': 1, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                                  precision    recall  f1-score   support
+
+Einwanderungs- geschichte tiefer       0.25      0.67      0.36         3
+  beide Elternteile eingewandert       0.00      0.00      0.00         2
+     ein Elternteil eingewandert       0.00      0.00      0.00         1
+                 nicht vorhanden       0.64      0.50      0.56        14
+             nur TN eingewandert       0.50      0.33      0.40         3
+
+                        accuracy                           0.43        23
+                       macro avg       0.28      0.30      0.26        23
+                    weighted avg       0.49      0.43      0.44        23
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                                                    precision    recall  f1-score   support
+
+                       Bildungsausländer*innen, AT       0.00      0.00      0.00         3
+                            Bildungsinländer*innen       0.80      0.60      0.69        20
+
+                                          accuracy                           0.52        23
+                                         macro avg       0.40      0.30      0.34        23
+                                      weighted avg       0.70      0.52      0.60        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'auto', 'svc__kernel': 'rbf'}
+                                           precision    recall  f1-score   support
+
+      Muttersprache neben anderer Sprache       0.08      0.50      0.14         2
+                Muttersprache nur Deutsch       1.00      0.18      0.30        17
+        Spracherwerb im erwachsenen Alter       0.00      0.00      0.00         1
+Spracherwerb im jungen Alter außerhalb DE       0.33      0.50      0.40         2
+       Spracherwerb im jungen Alter in DE       0.00      0.00      0.00         1
+
+                                 accuracy                           0.22        23
+                                macro avg       0.28      0.24      0.17        23
+                             weighted avg       0.78      0.22      0.27        23
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 0.1, 'svc__kernel': 'rbf'}
+                    precision    recall  f1-score   support
+
+ beide Elternteile       0.25      1.00      0.40         1
+      beide keinen       0.50      0.06      0.10        18
+nur ein Elternteil       0.18      0.75      0.29         4
+
+          accuracy                           0.22        23
+         macro avg       0.31      0.60      0.26        23
+      weighted avg       0.43      0.22      0.15        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                                                                                                precision    recall  f1-score   support
+
+ Geld reichte für ein Teil der grundlegenden Bedürfnisse mit Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+Geld reichte für ein Teil der grundlegenden Bedürfnisse ohne Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+                                               Geld reichte für grundlegende Bedürfnisse knapp       0.00      0.00      0.00         3
+          Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben mit Finanzplanung       0.50      0.25      0.33        12
+         Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben ohne Finanzplanung       0.00      0.00      0.00         1
+                                         Geld reichte für grundlegende Bedürfnisse vollständig       0.00      0.00      0.00         5
+
+                                                                                      accuracy           
+              														 0.13        23
+                                                                                     macro avg       0.08      0.04      0.06        23
+                                                                                  weighted avg       0.26      0.13      0.17        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 0.01, 'svc__kernel': 'rbf'}
+              precision    recall  f1-score   support
+
+  Hochschule       0.41      1.00      0.58         7
+ Universität       1.00      0.38      0.55        16
+
+    accuracy                           0.57        23
+   macro avg       0.71      0.69      0.56        23
+weighted avg       0.82      0.57      0.56        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}                                                                                  										  precision    recall  f1-score   support
+
+Erziehungswissenschaften / Sozialwesen / Bildungswissenschaften / Soziale Arbeit       0.30      0.50      0.38         6
+                                                           Geisteswissenschaften       0.50      0.33      0.40         3
+                                                                         Lehramt       0.00      0.00      0.00         2
+                             Mathematik / Informatik und Ingenieurwissenschaften       0.00      0.00      0.00         3
+                   Medizin, Gesundheits- und Naturwissenschaften und Psychologie       0.00      0.00      0.00         4
+                                                                       Sonstiges       0.00      0.00      0.00         1
+                                           Sozial- und Wirtschaftswissenschaften       0.12      0.25      0.17         4
+
+                                                                        accuracy                         
+ 													   0.22        23
+                                                                       macro avg       0.13      0.15      0.13        23
+                                                                    weighted avg       0.17      0.22      0.18        23
+
+EmoLex:
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 1, 'svc__kernel': 'poly'}
+                       precision    recall  f1-score   support
+
+       Deutsch / EU       0.89      0.40      0.55        20
+Nicht-EU / Staatenlos       0.14      0.67      0.24         3
+
+             accuracy                           0.43        23
+            macro avg       0.52      0.53      0.39        23
+         weighted avg       0.79      0.43      0.51        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                                  precision    recall  f1-score   support
+
+Einwanderungs- geschichte tiefer       0.00      0.00      0.00         3
+  beide Elternteile eingewandert       0.17      0.50      0.25         2
+     ein Elternteil eingewandert       0.00      0.00      0.00         1
+                 nicht vorhanden       0.50      0.21      0.30        14
+             nur TN eingewandert       0.00      0.00      0.00         3
+
+                        accuracy                           0.17        23
+                       macro avg       0.13      0.14      0.11        23
+                    weighted avg       0.32      0.17      0.20        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                                                    precision    recall  f1-score   support
+
+                       Bildungsausländer*innen, AT       0.07      0.33      0.11         3
+                            Bildungsinländer*innen       0.75      0.30      0.43        20
+
+                                          accuracy                           0.30        23
+                                         macro avg       0.41      0.32      0.27        23
+                                      weighted avg       0.66      0.30      0.39        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                                           precision    recall  f1-score   support
+
+      Muttersprache neben anderer Sprache       0.00      0.00      0.00         2
+                Muttersprache nur Deutsch       0.00      0.00      0.00        17
+        Spracherwerb im erwachsenen Alter       0.00      0.00      0.00         1
+Spracherwerb im jungen Alter außerhalb DE       0.12      0.50      0.20         2
+       Spracherwerb im jungen Alter in DE       0.00      0.00      0.00         1
+
+                                 accuracy                           0.04        23
+                                macro avg       0.03      0.10      0.04        23
+                             weighted avg       0.01      0.04      0.02        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 1, 'svc__kernel': 'rbf'}
+                    precision    recall  f1-score   support
+
+ beide Elternteile       0.07      1.00      0.13         1
+      beide keinen       0.88      0.39      0.54        18
+nur ein Elternteil       0.00      0.00      0.00         4
+
+          accuracy                           0.35        23
+         macro avg       0.32      0.46      0.22        23
+      weighted avg       0.69      0.35      0.43        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'poly'}
+                                                                                                precision    recall  f1-score   support
+
+ Geld reichte für ein Teil der grundlegenden Bedürfnisse mit Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+Geld reichte für ein Teil der grundlegenden Bedürfnisse ohne Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+                                               Geld reichte für grundlegende Bedürfnisse knapp       0.50      0.33      0.40         3
+          Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben mit Finanzplanung       0.67      0.50      0.57        12
+         Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben ohne Finanzplanung       0.00      0.00      0.00         1
+                                         Geld reichte für grundlegende Bedürfnisse vollständig       0.00      0.00      0.00         5
+
+                                                                                      accuracy           
+               													         0.30        23
+                                                                                     macro avg       0.19      0.14      0.16        23
+                                                                                  weighted avg       0.41      0.30      0.35        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'scale', 'svc__kernel': 'poly'}
+              precision    recall  f1-score   support
+
+  Hochschule       0.20      0.29      0.24         7
+ Universität       0.62      0.50      0.55        16
+
+    accuracy                           0.43        23
+   macro avg       0.41      0.39      0.39        23
+weighted avg       0.49      0.43      0.46        23
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                                                                                  precision    recall  f1-score   support
+
+Erziehungswissenschaften / Sozialwesen / Bildungswissenschaften / Soziale Arbeit       0.25      0.17      0.20         6
+                                                           Geisteswissenschaften       0.33      0.67      0.44         3
+                                                                         Lehramt       0.00      0.00      0.00         2
+                             Mathematik / Informatik und Ingenieurwissenschaften       0.33      0.67      0.44         3
+                   Medizin, Gesundheits- und Naturwissenschaften und Psychologie       0.00      0.00      0.00         4
+                                                                       Sonstiges       0.00      0.00      0.00         1
+                                           Sozial- und Wirtschaftswissenschaften       0.00      0.00      0.00         4
+
+                                                                        accuracy                         
+ 												           0.22        23
+                                                                       macro avg       0.13      0.21      0.16        23
+                                                                    weighted avg       0.15      0.22      0.17        23
+
+germansentiment:
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'poly'}
+                       precision    recall  f1-score   support
+
+       Deutsch / EU       0.78      0.35      0.48        20
+Nicht-EU / Staatenlos       0.07      0.33      0.12         3
+
+             accuracy                           0.35        23
+            macro avg       0.42      0.34      0.30        23
+         weighted avg       0.69      0.35      0.44        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'scale', 'svc__kernel': 'poly'}
+                                  precision    recall  f1-score   support
+
+Einwanderungs- geschichte tiefer       0.00      0.00      0.00         3
+  beide Elternteile eingewandert       0.00      0.00      0.00         2
+     ein Elternteil eingewandert       0.00      0.00      0.00         1
+                 nicht vorhanden       0.40      0.29      0.33        14
+             nur TN eingewandert       0.00      0.00      0.00         3
+
+                        accuracy                           0.17        23
+                       macro avg       0.08      0.06      0.07        23
+                    weighted avg       0.24      0.17      0.20        23
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 'scale', 'svc__kernel': 'poly'}
+                                                    precision    recall  f1-score   support
+
+                       Bildungsausländer*innen, AT       0.00      0.00      0.00         3
+                            Bildungsinländer*innen       0.80      0.60      0.69        20
+
+                                          accuracy                           0.52        23
+                                         macro avg       0.40      0.30      0.34        23
+                                      weighted avg       0.70      0.52      0.60        23
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                                           precision    recall  f1-score   support
+
+      Muttersprache neben anderer Sprache       0.50      0.50      0.50         2
+                Muttersprache nur Deutsch       0.00      0.00      0.00        17
+        Spracherwerb im erwachsenen Alter       0.00      0.00      0.00         1
+Spracherwerb im jungen Alter außerhalb DE       0.00      0.00      0.00         2
+       Spracherwerb im jungen Alter in DE       0.00      0.00      0.00         1
+
+                                 accuracy                           0.04        23
+                                macro avg       0.10      0.10      0.10        23
+                             weighted avg       0.04      0.04      0.04        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 0.1, 'svc__kernel': 'rbf'}
+                    precision    recall  f1-score   support
+
+ beide Elternteile       0.00      0.00      0.00         1
+      beide keinen       0.71      0.28      0.40        18
+nur ein Elternteil       0.00      0.00      0.00         4
+
+          accuracy                           0.22        23
+         macro avg       0.24      0.09      0.13        23
+      weighted avg       0.56      0.22      0.31        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'poly'}
+                                                                                                precision    recall  f1-score   support
+
+ Geld reichte für ein Teil der grundlegenden Bedürfnisse mit Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+Geld reichte für ein Teil der grundlegenden Bedürfnisse ohne Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+                                               Geld reichte für grundlegende Bedürfnisse knapp       1.00      0.33      0.50         3
+          Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben mit Finanzplanung       0.75      0.25      0.38        12
+         Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben ohne Finanzplanung       0.00      0.00      0.00         1
+                                         Geld reichte für grundlegende Bedürfnisse vollständig       0.27      0.60      0.38         5
+
+                                                                                      accuracy           
+                													 0.30        23
+                                                                                     macro avg       0.34      0.20      0.21        23
+                                                                                  weighted avg       0.58      0.30      0.34        23
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+              precision    recall  f1-score   support
+
+  Hochschule       0.36      0.71      0.48         7
+ Universität       0.78      0.44      0.56        16
+
+    accuracy                           0.52        23
+   macro avg       0.57      0.58      0.52        23
+weighted avg       0.65      0.52      0.53        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                                                                                  precision    recall  f1-score   support
+
+Erziehungswissenschaften / Sozialwesen / Bildungswissenschaften / Soziale Arbeit       0.40      0.67      0.50         6
+                                                           Geisteswissenschaften       0.00      0.00      0.00         3
+                                                                         Lehramt       0.25      0.50      0.33         2
+                             Mathematik / Informatik und Ingenieurwissenschaften       0.00      0.00      0.00         3
+                   Medizin, Gesundheits- und Naturwissenschaften und Psychologie       0.00      0.00      0.00         4
+                                                                       Sonstiges       0.00      0.00      0.00         1
+                                           Sozial- und Wirtschaftswissenschaften       0.12      0.25      0.17         4
+
+                                                                        accuracy                         
+  													   0.26        23
+                                                                       macro avg       0.11      0.20      0.14        23
+                                                                    weighted avg       0.15      0.26      0.19        23
+
+N-Gramme (N=1;4). Frequenzen:
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 1, 'svc__kernel': 'rbf'}
+                       precision    recall  f1-score   support
+
+       Deutsch / EU       0.84      0.80      0.82        20
+Nicht-EU / Staatenlos       0.00      0.00      0.00         3
+
+             accuracy                           0.70        23
+            macro avg       0.42      0.40      0.41        23
+         weighted avg       0.73      0.70      0.71        23
+
+Top 10 Features für Klasse 'Deutsch / EU':
+count_1gram_studium: 0.2915
+count_1gram_fühlen: 0.2416
+count_1gram_welt: 0.2211
+count_2gram_fühlen welt: 0.2178
+count_1gram_eher: 0.2136
+count_1gram_familie: 0.2099
+count_1gram_umfeld: 0.1906
+count_1gram_sozial: 0.1895
+count_1gram_finden: 0.1865
+count_1gram_akademisch: 0.1749
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 1, 'svc__kernel': 'rbf'}
+                                  precision    recall  f1-score   support
+
+Einwanderungs- geschichte tiefer       0.00      0.00      0.00         3
+  beide Elternteile eingewandert       0.00      0.00      0.00         2
+     ein Elternteil eingewandert       0.00      0.00      0.00         1
+                 nicht vorhanden       0.50      0.14      0.22        14
+             nur TN eingewandert       0.00      0.00      0.00         3
+
+                        accuracy                           0.09        23
+                       macro avg       0.10      0.03      0.04        23
+                    weighted avg       0.30      0.09      0.14        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                                                    precision    recall  f1-score   support
+
+                       Bildungsausländer*innen, AT       0.09      0.33      0.14         3
+                            Bildungsinländer*innen       0.83      0.50      0.62        20
+
+                                          accuracy                           0.48        23
+                                         macro avg       0.46      0.42      0.38        23
+                                      weighted avg       0.74      0.48      0.56        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 1, 'svc__kernel': 'rbf'}
+                                           precision    recall  f1-score   support
+
+      Muttersprache neben anderer Sprache       0.00      0.00      0.00         2
+                Muttersprache nur Deutsch       0.80      0.24      0.36        17
+        Spracherwerb im erwachsenen Alter       0.00      0.00      0.00         1
+Spracherwerb im jungen Alter außerhalb DE       0.00      0.00      0.00         2
+       Spracherwerb im jungen Alter in DE       0.00      0.00      0.00         1
+
+                                 accuracy                           0.17        23
+                                macro avg       0.16      0.05      0.07        23
+                             weighted avg       0.59      0.17      0.27        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                    precision    recall  f1-score   support
+
+ beide Elternteile       0.17      1.00      0.29         1
+      beide keinen       0.80      0.44      0.57        18
+nur ein Elternteil       0.14      0.25      0.18         4
+
+          accuracy                           0.43        23
+         macro avg       0.37      0.56      0.35        23
+      weighted avg       0.66      0.43      0.49        23
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 1, 'svc__kernel': 'rbf'}
+                                                                                                precision    recall  f1-score   support
+
+ Geld reichte für ein Teil der grundlegenden Bedürfnisse mit Möglichkeit zu Sonderersparnissen       1.00      1.00      1.00         1
+Geld reichte für ein Teil der grundlegenden Bedürfnisse ohne Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+                                               Geld reichte für grundlegende Bedürfnisse knapp       0.00      0.00      0.00         3
+          Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben mit Finanzplanung       0.00      0.00      0.00        12
+         Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben ohne Finanzplanung       0.10      1.00      0.18         1
+                                         Geld reichte für grundlegende Bedürfnisse vollständig       0.20      0.40      0.27         5
+
+                                                                                      accuracy           
+                												         0.17        23
+                                                                                     macro avg       0.22      0.40      0.24        23
+                                                                                  weighted avg       0.09      0.17      0.11        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+              precision    recall  f1-score   support
+
+  Hochschule       0.29      0.57      0.38         7
+ Universität       0.67      0.38      0.48        16
+
+    accuracy                           0.43        23
+   macro avg       0.48      0.47      0.43        23
+weighted avg       0.55      0.43      0.45        23
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                                                                                  precision    recall  f1-score   support
+
+Erziehungswissenschaften / Sozialwesen / Bildungswissenschaften / Soziale Arbeit       0.00      0.00      0.00         6
+                                                           Geisteswissenschaften       1.00      0.33      0.50         3
+                                                                         Lehramt       0.00      0.00      0.00         2
+                             Mathematik / Informatik und Ingenieurwissenschaften       0.00      0.00      0.00         3
+                   Medizin, Gesundheits- und Naturwissenschaften und Psychologie       0.12      0.25      0.17         4
+                                                                       Sonstiges       0.00      0.00      0.00         1
+                                           Sozial- und Wirtschaftswissenschaften       0.25      0.25      0.25         4
+
+                                                                        accuracy                         
+  													   0.13        23
+                                                                       macro avg       0.20      0.12      0.13        23
+                                                                    weighted avg       0.20      0.13      0.14        23
+
+N-Gramme. TF-IDF:
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 1, 'svc__kernel': 'rbf'}
+                       precision    recall  f1-score   support
+
+       Deutsch / EU       0.91      0.50      0.65        20
+Nicht-EU / Staatenlos       0.17      0.67      0.27         3
+
+             accuracy                           0.52        23
+            macro avg       0.54      0.58      0.46        23
+         weighted avg       0.81      0.52      0.60        23
+
+Optimale Parameter: {'svc__C': 1, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                                  precision    recall  f1-score   support
+
+Einwanderungs- geschichte tiefer       1.00      0.33      0.50         3
+  beide Elternteile eingewandert       0.20      0.50      0.29         2
+     ein Elternteil eingewandert       0.12      1.00      0.22         1
+                 nicht vorhanden       0.67      0.29      0.40        14
+             nur TN eingewandert       0.00      0.00      0.00         3
+
+                        accuracy                           0.30        23
+                       macro avg       0.40      0.42      0.28        23
+                    weighted avg       0.56      0.30      0.34        23
+
+Optimale Parameter: {'svc__C': 1, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                                                    precision    recall  f1-score   support
+
+                       Bildungsausländer*innen, AT       0.18      0.67      0.29         3
+                            Bildungsinländer*innen       0.92      0.55      0.69        20
+
+                                          accuracy                           0.57        23
+                                         macro avg       0.55      0.61      0.49        23
+                                      weighted avg       0.82      0.57      0.64        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 1, 'svc__kernel': 'rbf'}
+                                           precision    recall  f1-score   support
+
+      Muttersprache neben anderer Sprache       0.00      0.00      0.00         2
+                Muttersprache nur Deutsch       0.60      0.18      0.27        17
+        Spracherwerb im erwachsenen Alter       0.00      0.00      0.00         1
+Spracherwerb im jungen Alter außerhalb DE       0.00      0.00      0.00         2
+       Spracherwerb im jungen Alter in DE       0.00      0.00      0.00         1
+
+                                 accuracy                           0.13        23
+                                macro avg       0.12      0.04      0.05        23
+                             weighted avg       0.44      0.13      0.20        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'poly'}
+                    precision    recall  f1-score   support
+
+ beide Elternteile       0.50      1.00      0.67         1
+      beide keinen       0.88      0.78      0.82        18
+nur ein Elternteil       0.40      0.50      0.44         4
+
+          accuracy                           0.74        23
+         macro avg       0.59      0.76      0.64        23
+      weighted avg       0.78      0.74      0.75        23
+
+Top 10 Features für Klasse 'beide keinen':
+tfidf_1gram_fühlen: 0.3367
+tfidf_1gram_studium: 0.3190
+tfidf_1gram_welt: 0.2540
+tfidf_1gram_umfeld: 0.2394
+tfidf_1gram_sozial: 0.2373
+tfidf_1gram_sprechen: 0.2330
+tfidf_1gram_versuchen: 0.2205
+tfidf_1gram_thema: 0.2172
+tfidf_1gram_einfach: 0.2150
+tfidf_1gram_akademisch: 0.1960
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 1, 'svc__kernel': 'rbf'}
+                                                                                                precision    recall  f1-score   support
+
+ Geld reichte für ein Teil der grundlegenden Bedürfnisse mit Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+Geld reichte für ein Teil der grundlegenden Bedürfnisse ohne Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+                                               Geld reichte für grundlegende Bedürfnisse knapp       0.50      0.33      0.40         3
+          Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben mit Finanzplanung       0.50      0.42      0.45        12
+         Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben ohne Finanzplanung       0.00      0.00      0.00         1
+                                         Geld reichte für grundlegende Bedürfnisse vollständig       0.25      0.20      0.22         5
+
+                                                                                      accuracy           
+                												         0.30        23
+                                                                                     macro avg       0.21      0.16      0.18        23
+                                                                                  weighted avg       0.38      0.30      0.34        23
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+              precision    recall  f1-score   support
+
+  Hochschule       0.20      0.14      0.17         7
+ Universität       0.67      0.75      0.71        16
+
+    accuracy                           0.57        23
+   macro avg       0.43      0.45      0.44        23
+weighted avg       0.52      0.57      0.54        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 1, 'svc__kernel': 'rbf'}
+                                                                                  precision    recall  f1-score   support
+
+Erziehungswissenschaften / Sozialwesen / Bildungswissenschaften / Soziale Arbeit       0.40      0.33      0.36         6
+                                                           Geisteswissenschaften       0.00      0.00      0.00         3
+                                                                         Lehramt       0.00      0.00      0.00         2
+                             Mathematik / Informatik und Ingenieurwissenschaften       0.00      0.00      0.00         3
+                   Medizin, Gesundheits- und Naturwissenschaften und Psychologie       0.33      0.25      0.29         4
+                                                                       Sonstiges       0.00      0.00      0.00         1
+                                           Sozial- und Wirtschaftswissenschaften       0.14      0.25      0.18         4
+
+                                                                        accuracy                         
+  													   0.17        23
+                                                                       macro avg       0.13      0.12      0.12        23
+                                                                    weighted avg       0.19      0.17      0.18        23
+
+Skalierte Frequenz der Top-Wörter mit dem höchsten Informationsgewinn:
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 0.01, 'svc__kernel': 'rbf'}
+                       precision    recall  f1-score   support
+
+       Deutsch / EU       0.95      1.00      0.98        20
+Nicht-EU / Staatenlos       1.00      0.67      0.80         3
+
+             accuracy                           0.96        23
+            macro avg       0.98      0.83      0.89        23
+         weighted avg       0.96      0.96      0.95        23
+
+Top 10 Features für Klasse 'Deutsch / EU':
+TopIG_studium: 0.2915
+TopIG_fühlen: 0.2416
+TopIG_anpassen: 0.2252
+TopIG_welt: 0.2211
+TopIG_eher: 0.2136
+TopIG_familie: 0.2099
+TopIG_sagen: 0.2079
+TopIG_umfeld: 0.1906
+TopIG_sozial: 0.1895
+TopIG_finden: 0.1865
+
+Top 10 Features für Klasse 'Nicht-EU / Staatenlos':
+TopIG_deutsch: 0.2946
+TopIG_sprache: 0.2857
+TopIG_kultur: 0.2857
+TopIG_deutschland: 0.2357
+TopIG_unterschied: 0.2286
+TopIG_neu: 0.2286
+TopIG_fühlen: 0.2286
+TopIG_sozial: 0.2245
+TopIG_eher: 0.2245
+TopIG_studierende: 0.2143
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 0.1, 'svc__kernel': 'rbf'}
+                                  precision    recall  f1-score   support
+
+Einwanderungs- geschichte tiefer       0.00      0.00      0.00         3
+  beide Elternteile eingewandert       0.00      0.00      0.00         2
+     ein Elternteil eingewandert       0.00      0.00      0.00         1
+                 nicht vorhanden       0.60      0.43      0.50        14
+             nur TN eingewandert       1.00      0.33      0.50         3
+
+                        accuracy                           0.30        23
+                       macro avg       0.32      0.15      0.20        23
+                    weighted avg       0.50      0.30      0.37        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'auto', 'svc__kernel': 'rbf'}
+                                                    precision    recall  f1-score   support
+
+                       Bildungsausländer*innen, AT       1.00      0.33      0.50         3
+                            Bildungsinländer*innen       0.91      1.00      0.95        20
+
+                                          accuracy                           0.91        23
+                                         macro avg       0.95      0.67      0.73        23
+                                      weighted avg       0.92      0.91      0.89        23
+
+Top 10 Features für Klasse 'Bildungsausländer*innen, AT':
+TopIG_sprache: 0.2933
+TopIG_deutsch: 0.2750
+TopIG_integration: 0.2667
+TopIG_kultur: 0.2667
+TopIG_sozial: 0.2667
+TopIG_unterschied: 0.2400
+TopIG_eher: 0.2381
+TopIG_fühlen: 0.2356
+TopIG_herausforderung: 0.2333
+TopIG_neu: 0.2267
+
+Top 10 Features für Klasse 'Bildungsinländer*innen':
+TopIG_studium: 0.2967
+TopIG_fühlen: 0.2407
+TopIG_anpassen: 0.2250
+TopIG_welt: 0.2200
+TopIG_familie: 0.2120
+TopIG_eher: 0.2114
+TopIG_sagen: 0.2075
+TopIG_denken: 0.1920
+TopIG_finden: 0.1900
+TopIG_umfeld: 0.1858
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                                           precision    recall  f1-score   support
+
+      Muttersprache neben anderer Sprache       0.10      1.00      0.18         2
+                Muttersprache nur Deutsch       0.00      0.00      0.00        17
+        Spracherwerb im erwachsenen Alter       0.50      1.00      0.67         1
+Spracherwerb im jungen Alter außerhalb DE       0.00      0.00      0.00         2
+       Spracherwerb im jungen Alter in DE       0.00      0.00      0.00         1
+
+                                 accuracy                           0.13        23
+                                macro avg       0.12      0.40      0.17        23
+                             weighted avg       0.03      0.13      0.04        23
+
+Optimale Parameter: {'svc__C': 1, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                    precision    recall  f1-score   support
+
+ beide Elternteile       0.00      0.00      0.00         1
+      beide keinen       0.79      0.61      0.69        18
+nur ein Elternteil       0.17      0.25      0.20         4
+
+          accuracy                           0.52        23
+         macro avg       0.32      0.29      0.30        23
+      weighted avg       0.64      0.52      0.57        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 1, 'svc__kernel': 'rbf'}
+                                                                                                precision    recall  f1-score   support
+
+ Geld reichte für ein Teil der grundlegenden Bedürfnisse mit Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+Geld reichte für ein Teil der grundlegenden Bedürfnisse ohne Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+                                               Geld reichte für grundlegende Bedürfnisse knapp       0.00      0.00      0.00         3
+          Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben mit Finanzplanung       0.33      0.08      0.13        12
+         Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben ohne Finanzplanung       0.00      0.00      0.00         1
+                                         Geld reichte für grundlegende Bedürfnisse vollständig       1.00      0.40      0.57         5
+
+                                                                                      accuracy           
+                0.13        23
+                                                                                     macro avg       0.22      0.08      0.12        23
+                                                                                  weighted avg       0.39      0.13      0.19        23
+
+Optimale Parameter: {'svc__C': 1, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+              precision    recall  f1-score   support
+
+  Hochschule       0.36      0.57      0.44         7
+ Universität       0.75      0.56      0.64        16
+
+    accuracy                           0.57        23
+   macro avg       0.56      0.57      0.54        23
+weighted avg       0.63      0.57      0.58        23
+
+Optimale Parameter: {'svc__C': 1, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                                                                                  precision    recall  f1-score   support
+
+Erziehungswissenschaften / Sozialwesen / Bildungswissenschaften / Soziale Arbeit       0.00      0.00      0.00         6
+                                                           Geisteswissenschaften       0.25      0.33      0.29         3
+                                                                         Lehramt       0.00      0.00      0.00         2
+                             Mathematik / Informatik und Ingenieurwissenschaften       0.00      0.00      0.00         3
+                   Medizin, Gesundheits- und Naturwissenschaften und Psychologie       0.43      0.75      0.55         4
+                                                                       Sonstiges       0.00      0.00      0.00         1
+                                           Sozial- und Wirtschaftswissenschaften       0.00      0.00      0.00         4
+
+                                                                        accuracy                         
+ 													   0.17        23
+                                                                       macro avg       0.10      0.15      0.12        23
+                                                                    weighted avg       0.11      0.17      0.13        23
+
+XML-Features. Frequenzen allgemein:
+Optimale Parameter: {'svc__C': 1, 'svc__gamma': 1, 'svc__kernel': 'rbf'}
+                       precision    recall  f1-score   support
+
+       Deutsch / EU       0.90      0.95      0.93        20
+Nicht-EU / Staatenlos       0.50      0.33      0.40         3
+
+             accuracy                           0.87        23
+            macro avg       0.70      0.64      0.66        23
+         weighted avg       0.85      0.87      0.86        23
+
+Top 10 Features für Klasse 'Deutsch / EU':
+FREQ<sek_habitus typ="indiv" thema="Sprache">: 0.4125
+FREQ<sek_habitus typ="indiv" thema="Themenwechsel nach Milieu">: 0.3465
+FREQ<sek_habitus typ="indiv" thema="Zurueckhaltung">: 0.3416
+FREQ<entfremdung typ="ambiv">: 0.3267
+FREQ<nicht_passung bezogen_auf="Aufstiegsm" thema="Finanzen">: 0.2904
+FREQ<nicht_passung bezogen_auf="Aufstiegsm" thema="Sprache">: 0.2723
+FREQ<nicht_passung bezogen_auf="Aufstiegsm" thema="fehlende Zugehoerigkeit">: 0.2706
+FREQ<nicht_passung bezogen_auf="Herkunftsm" thema="Verstaendnis zur aktuellen Lebensweise">: 0.1931      
+FREQ<prim_habitus typ="gruppe" thema="Sprache">: 0.1881
+FREQ<habitus_beibehalten auspraegung="Hysteresis-Effekt">: 0.1782
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 0.01, 'svc__kernel': 'rbf'}
+                                  precision    recall  f1-score   support
+
+Einwanderungs- geschichte tiefer       0.00      0.00      0.00         3
+  beide Elternteile eingewandert       0.00      0.00      0.00         2
+     ein Elternteil eingewandert       0.00      0.00      0.00         1
+                 nicht vorhanden       0.71      0.36      0.48        14
+             nur TN eingewandert       0.00      0.00      0.00         3
+
+                        accuracy                           0.22        23
+                       macro avg       0.14      0.07      0.10        23
+                    weighted avg       0.43      0.22      0.29        23
+
+Optimale Parameter: {'svc__C': 1, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                                                    precision    recall  f1-score   support
+
+                       Bildungsausländer*innen, AT       0.50      0.67      0.57         3
+                            Bildungsinländer*innen       0.95      0.90      0.92        20
+
+                                          accuracy                           0.87        23
+                                         macro avg       0.72      0.78      0.75        23
+                                      weighted avg       0.89      0.87      0.88        23
+
+Top 10 Features für Klasse 'Bildungsausländer*innen, AT':
+FREQ<sek_habitus typ="indiv" thema="Akkulturation">: 0.5000
+FREQ<sek_habitus typ="indiv" thema="Themenwechsel nach Milieu">: 0.4333
+FREQ<sek_habitus typ="indiv" thema="Sprache">: 0.3778
+FREQ<prim_habitus typ="gruppe" thema="Sprache">: 0.3333
+FREQ<nicht_passung bezogen_auf="Aufstiegsm" thema="Finanzen">: 0.2889
+FREQ<entfremdung typ="keine">: 0.2667
+FREQ<nicht_passung bezogen_auf="Aufstiegsm" thema="administr Ablaeufe">: 0.2333
+FREQ<sek_habitus typ="indiv" thema="Zurueckhaltung">: 0.2333
+FREQ<sek_habitus typ="indiv" thema="Auftreten">: 0.2167
+FREQ<nicht_passung bezogen_auf="Aufstiegsm" thema="Sprache">: 0.2000
+
+Top 10 Features für Klasse 'Bildungsinländer*innen':
+FREQ<sek_habitus typ="indiv" thema="Sprache">: 0.4100
+FREQ<sek_habitus typ="indiv" thema="Zurueckhaltung">: 0.3500
+FREQ<sek_habitus typ="indiv" thema="Themenwechsel nach Milieu">: 0.3400
+FREQ<entfremdung typ="ambiv">: 0.3350
+FREQ<nicht_passung bezogen_auf="Aufstiegsm" thema="Finanzen">: 0.2967
+FREQ<nicht_passung bezogen_auf="Aufstiegsm" thema="Sprache">: 0.2750
+FREQ<nicht_passung bezogen_auf="Aufstiegsm" thema="fehlende Zugehoerigkeit">: 0.2733
+FREQ<nicht_passung bezogen_auf="Herkunftsm" thema="Verstaendnis zur aktuellen Lebensweise">: 0.1950      
+FREQ<prim_habitus typ="gruppe" thema="Sprache">: 0.1900
+FREQ<habitus_beibehalten auspraegung="Hysteresis-Effekt">: 0.1800
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'auto', 'svc__kernel': 'rbf'}
+                                           precision    recall  f1-score   support
+
+      Muttersprache neben anderer Sprache       0.29      1.00      0.44         2
+                Muttersprache nur Deutsch       0.67      0.12      0.20        17
+        Spracherwerb im erwachsenen Alter       0.00      0.00      0.00         1
+Spracherwerb im jungen Alter außerhalb DE       0.00      0.00      0.00         2
+       Spracherwerb im jungen Alter in DE       0.09      1.00      0.17         1
+
+                                 accuracy                           0.22        23
+                                macro avg       0.21      0.42      0.16        23
+                             weighted avg       0.52      0.22      0.19        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                    precision    recall  f1-score   support
+
+ beide Elternteile       0.08      1.00      0.15         1
+      beide keinen       0.75      0.33      0.46        18
+nur ein Elternteil       0.00      0.00      0.00         4
+
+          accuracy                           0.30        23
+         macro avg       0.28      0.44      0.21        23
+      weighted avg       0.59      0.30      0.37        23
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                                                                                                precision    recall  f1-score   support
+
+ Geld reichte für ein Teil der grundlegenden Bedürfnisse mit Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+Geld reichte für ein Teil der grundlegenden Bedürfnisse ohne Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+                                               Geld reichte für grundlegende Bedürfnisse knapp       0.00      0.00      0.00         3
+          Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben mit Finanzplanung       0.67      0.50      0.57        12
+         Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben ohne Finanzplanung       0.12      1.00      0.22         1
+                                         Geld reichte für grundlegende Bedürfnisse vollständig       0.00      0.00      0.00         5
+
+                                                                                      accuracy           
+													                 0.30        23
+                                                                                     macro avg       0.13      0.25      0.13        23
+                                                                                  weighted avg       0.35      0.30      0.31        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'auto', 'svc__kernel': 'rbf'}
+              precision    recall  f1-score   support
+
+  Hochschule       0.33      0.43      0.38         7
+ Universität       0.71      0.62      0.67        16
+
+    accuracy                           0.57        23
+   macro avg       0.52      0.53      0.52        23
+weighted avg       0.60      0.57      0.58        23
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                                                                                  precision    recall  f1-score   support
+
+Erziehungswissenschaften / Sozialwesen / Bildungswissenschaften / Soziale Arbeit       0.20      0.17      0.18         6
+                                                           Geisteswissenschaften       0.12      0.33      0.18         3
+                                                                         Lehramt       0.00      0.00      0.00         2
+                             Mathematik / Informatik und Ingenieurwissenschaften       0.00      0.00      0.00         3
+                   Medizin, Gesundheits- und Naturwissenschaften und Psychologie       0.20      0.25      0.22         4
+                                                                       Sonstiges       0.00      0.00      0.00         1
+                                           Sozial- und Wirtschaftswissenschaften       0.00      0.00      0.00         4
+
+                                                                        accuracy                         
+													   0.13        23
+                                                                       macro avg       0.07      0.11      0.08        23
+                                                                    weighted avg       0.10      0.13      0.11        23
+
+XML-Features. TF-IDF allgemein:
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 1, 'svc__kernel': 'rbf'}
+                       precision    recall  f1-score   support
+
+       Deutsch / EU       0.95      0.95      0.95        20
+Nicht-EU / Staatenlos       0.67      0.67      0.67         3
+
+             accuracy                           0.91        23
+            macro avg       0.81      0.81      0.81        23
+         weighted avg       0.91      0.91      0.91        23
+
+Top 10 Features für Klasse 'Deutsch / EU':
+TFIDF<sek_habitus typ="indiv" thema="sprache">: 0.4554
+TFIDF<entfremdung typ="ambiv">: 0.3127
+TFIDF<nicht_passung bezogen_auf="aufstiegsm" thema="sprache">: 0.3068
+TFIDF<nicht_passung bezogen_auf="aufstiegsm" thema="finanzen">: 0.2975
+TFIDF<sek_habitus typ="indiv" thema="zurueckhaltung">: 0.2754
+TFIDF<sek_habitus typ="indiv" thema="themenwechsel nach milieu">: 0.2466
+TFIDF<nicht_passung bezogen_auf="herkunftsm" thema="verstaendnis zur aktuellen lebensweise">: 0.2463     
+TFIDF<nicht_passung bezogen_auf="aufstiegsm" thema="fehlende zugehoerigkeit">: 0.2104
+TFIDF<nicht_passung bezogen_auf="aufstiegsm" thema="bildung">: 0.2025
+TFIDF<sek_habitus typ="indiv" thema="schuldgefuehle">: 0.1845
+
+Top 10 Features für Klasse 'Nicht-EU / Staatenlos':
+TFIDF<sek_habitus typ="indiv" thema="akkulturation">: 0.4720
+TFIDF<sek_habitus typ="indiv" thema="sprache">: 0.4003
+TFIDF<nicht_passung bezogen_auf="aufstiegsm" thema="finanzen">: 0.3505
+TFIDF<prim_habitus typ="gruppe" thema="sprache">: 0.2893
+TFIDF<sek_habitus typ="indiv" thema="themenwechsel nach milieu">: 0.2782
+TFIDF<sek_habitus typ="indiv" thema="auftreten">: 0.2648
+TFIDF<nicht_passung bezogen_auf="aufstiegsm" thema="sprache">: 0.2328
+TFIDF<habitus_nach_aufstieg typ="flex" zugehoerigkeit="beide milieus">: 0.2182
+TFIDF<nicht_passung bezogen_auf="aufstiegsm" thema="administr ablaeufe">: 0.2140
+TFIDF<sek_habitus typ="indiv" thema="zurueckhaltung">: 0.2081
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                                  precision    recall  f1-score   support
+
+Einwanderungs- geschichte tiefer       0.00      0.00      0.00         3
+  beide Elternteile eingewandert       0.20      0.50      0.29         2
+     ein Elternteil eingewandert       0.00      0.00      0.00         1
+                 nicht vorhanden       0.50      0.14      0.22        14
+             nur TN eingewandert       0.00      0.00      0.00         3
+
+                        accuracy                           0.13        23
+                       macro avg       0.14      0.13      0.10        23
+                    weighted avg       0.32      0.13      0.16        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                                                    precision    recall  f1-score   support
+
+                       Bildungsausländer*innen, AT       0.14      0.33      0.20         3
+                            Bildungsinländer*innen       0.88      0.70      0.78        20
+
+                                          accuracy                           0.65        23
+                                         macro avg       0.51      0.52      0.49        23
+                                      weighted avg       0.78      0.65      0.70        23
+
+Optimale Parameter: {'svc__C': 1, 'svc__gamma': 'scale', 'svc__kernel': 'poly'}
+                                           precision    recall  f1-score   support
+
+      Muttersprache neben anderer Sprache       0.25      0.50      0.33         2
+                Muttersprache nur Deutsch       1.00      0.06      0.11        17
+        Spracherwerb im erwachsenen Alter       0.00      0.00      0.00         1
+Spracherwerb im jungen Alter außerhalb DE       0.08      0.50      0.14         2
+       Spracherwerb im jungen Alter in DE       0.33      1.00      0.50         1
+
+                                 accuracy                           0.17        23
+                                macro avg       0.33      0.41      0.22        23
+                             weighted avg       0.78      0.17      0.15        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                    precision    recall  f1-score   support
+
+ beide Elternteile       0.08      1.00      0.15         1
+      beide keinen       0.80      0.22      0.35        18
+nur ein Elternteil       0.17      0.25      0.20         4
+
+          accuracy                           0.26        23
+         macro avg       0.35      0.49      0.23        23
+      weighted avg       0.66      0.26      0.31        23
+
+Optimale Parameter: {'svc__C': 1, 'svc__gamma': 'scale', 'svc__kernel': 'poly'}
+                                                                                                precision    recall  f1-score   support
+
+ Geld reichte für ein Teil der grundlegenden Bedürfnisse mit Möglichkeit zu Sonderersparnissen       0.07      1.00      0.13         1
+Geld reichte für ein Teil der grundlegenden Bedürfnisse ohne Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+                                               Geld reichte für grundlegende Bedürfnisse knapp       0.00      0.00      0.00         3
+          Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben mit Finanzplanung       0.00      0.00      0.00        12
+         Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben ohne Finanzplanung       0.00      0.00      0.00         1
+                                         Geld reichte für grundlegende Bedürfnisse vollständig       0.00      0.00      0.00         5
+
+                                                                                      accuracy           
+ 													                 0.04        23
+                                                                                     macro avg       0.01      0.17      0.02        23
+                                                                                  weighted avg       0.00      0.04      0.01        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'auto', 'svc__kernel': 'rbf'}
+              precision    recall  f1-score   support
+
+  Hochschule       0.25      0.43      0.32         7
+ Universität       0.64      0.44      0.52        16
+
+    accuracy                           0.43        23
+   macro avg       0.44      0.43      0.42        23
+weighted avg       0.52      0.43      0.46        23
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                                                                                  precision    recall  f1-score   support
+
+Erziehungswissenschaften / Sozialwesen / Bildungswissenschaften / Soziale Arbeit       0.00      0.00      0.00       6.0
+                                                           Geisteswissenschaften       0.00      0.00      0.00       3.0
+                                                                         Lehramt       0.00      0.00      0.00       2.0
+                             Mathematik / Informatik und Ingenieurwissenschaften       0.00      0.00      0.00       3.0
+                   Medizin, Gesundheits- und Naturwissenschaften und Psychologie       0.00      0.00      0.00       4.0
+                                                                       Sonstiges       0.00      0.00      0.00       1.0
+                                           Sozial- und Wirtschaftswissenschaften       0.00      0.00      0.00       4.0
+
+                                                                        accuracy                         
+													   0.00      23.0
+                                                                       macro avg       0.00      0.00      0.00      23.0
+                                                                    weighted avg       0.00      0.00      0.00      23.0
+
+XML-Features. Frequenzen im Tag <nicht_passung>:
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 0.01, 'svc__kernel': 'rbf'}
+                       precision    recall  f1-score   support
+
+       Deutsch / EU       0.85      0.85      0.85        20
+Nicht-EU / Staatenlos       0.00      0.00      0.00         3
+
+             accuracy                           0.74        23
+            macro avg       0.42      0.42      0.42        23
+         weighted avg       0.74      0.74      0.74        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'auto', 'svc__kernel': 'rbf'}
+                                  precision    recall  f1-score   support
+
+Einwanderungs- geschichte tiefer       0.00      0.00      0.00         3
+  beide Elternteile eingewandert       0.00      0.00      0.00         2
+     ein Elternteil eingewandert       0.00      0.00      0.00         1
+                 nicht vorhanden       0.33      0.07      0.12        14
+             nur TN eingewandert       0.00      0.00      0.00         3
+
+                        accuracy                           0.04        23
+                       macro avg       0.07      0.01      0.02        23
+                    weighted avg       0.20      0.04      0.07        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                                                    precision    recall  f1-score   support
+
+                       Bildungsausländer*innen, AT       0.25      0.67      0.36         3
+                            Bildungsinländer*innen       0.93      0.70      0.80        20
+
+                                          accuracy                           0.70        23
+                                         macro avg       0.59      0.68      0.58        23
+                                      weighted avg       0.84      0.70      0.74        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'poly'}
+                                           precision    recall  f1-score   support
+
+      Muttersprache neben anderer Sprache       0.14      0.50      0.22         2
+                Muttersprache nur Deutsch       0.00      0.00      0.00        17
+        Spracherwerb im erwachsenen Alter       0.00      0.00      0.00         1
+Spracherwerb im jungen Alter außerhalb DE       0.00      0.00      0.00         2
+       Spracherwerb im jungen Alter in DE       0.06      1.00      0.12         1
+
+                                 accuracy                           0.09        23
+                                macro avg       0.04      0.30      0.07        23
+                             weighted avg       0.02      0.09      0.02        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 0.1, 'svc__kernel': 'rbf'}
+                    precision    recall  f1-score   support
+
+ beide Elternteile       0.00      0.00      0.00         1
+      beide keinen       0.67      0.33      0.44        18
+nur ein Elternteil       0.00      0.00      0.00         4
+
+          accuracy                           0.26        23
+         macro avg       0.22      0.11      0.15        23
+      weighted avg       0.52      0.26      0.35        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                                                                                                precision    recall  f1-score   support
+
+ Geld reichte für ein Teil der grundlegenden Bedürfnisse mit Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+Geld reichte für ein Teil der grundlegenden Bedürfnisse ohne Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+                                               Geld reichte für grundlegende Bedürfnisse knapp       0.00      0.00      0.00         3
+          Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben mit Finanzplanung       0.50      0.17      0.25        12
+         Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben ohne Finanzplanung       0.00      0.00      0.00         1
+                                         Geld reichte für grundlegende Bedürfnisse vollständig       0.00      0.00      0.00         5
+
+                                                                                      accuracy           
+ 													                 0.09        23
+                                                                                     macro avg       0.08      0.03      0.04        23
+                                                                                  weighted avg       0.26      0.09      0.13        23
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 0.1, 'svc__kernel': 'rbf'}
+              precision    recall  f1-score   support
+
+  Hochschule       0.00      0.00      0.00         7
+ Universität       0.65      0.81      0.72        16
+
+    accuracy                           0.57        23
+   macro avg       0.33      0.41      0.36        23
+weighted avg       0.45      0.57      0.50        23
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 1, 'svc__kernel': 'rbf'}
+                                                                                  precision    recall  f1-score   support
+
+Erziehungswissenschaften / Sozialwesen / Bildungswissenschaften / Soziale Arbeit       0.29      0.33      0.31         6
+                                                           Geisteswissenschaften       0.00      0.00      0.00         3
+                                                                         Lehramt       0.10      0.50      0.17         2
+                             Mathematik / Informatik und Ingenieurwissenschaften       0.00      0.00      0.00         3
+                   Medizin, Gesundheits- und Naturwissenschaften und Psychologie       0.33      0.25      0.29         4
+                                                                       Sonstiges       0.00      0.00      0.00         1
+                                           Sozial- und Wirtschaftswissenschaften       0.00      0.00      0.00         4
+
+                                                                        accuracy                         
+													   0.17        23
+                                                                       macro avg       0.10      0.15      0.11        23
+                                                                    weighted avg       0.14      0.17      0.14        23
+
+
+
+XML-Features. TF-IDF im Tag <nicht_passung>:
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                       precision    recall  f1-score   support
+
+       Deutsch / EU       0.90      0.90      0.90        20
+Nicht-EU / Staatenlos       0.33      0.33      0.33         3
+
+             accuracy                           0.83        23
+            macro avg       0.62      0.62      0.62        23
+         weighted avg       0.83      0.83      0.83        23
+
+Optimale Parameter: {'svc__C': 1, 'svc__gamma': 1, 'svc__kernel': 'rbf'}
+                                  precision    recall  f1-score   support
+
+Einwanderungs- geschichte tiefer       0.50      0.33      0.40         3
+  beide Elternteile eingewandert       0.00      0.00      0.00         2
+     ein Elternteil eingewandert       0.00      0.00      0.00         1
+                 nicht vorhanden       1.00      0.07      0.13        14
+             nur TN eingewandert       0.00      0.00      0.00         3
+
+                        accuracy                           0.09        23
+                       macro avg       0.30      0.08      0.11        23
+                    weighted avg       0.67      0.09      0.13        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 0.01, 'svc__kernel': 'rbf'}
+                                                    precision    recall  f1-score   support
+
+                       Bildungsausländer*innen, AT       0.20      0.67      0.31         3
+                            Bildungsinländer*innen       0.92      0.60      0.73        20
+
+                                          accuracy                           0.61        23
+                                         macro avg       0.56      0.63      0.52        23
+                                      weighted avg       0.83      0.61      0.67        23
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 'auto', 'svc__kernel': 'rbf'}
+                                           precision    recall  f1-score   support
+
+      Muttersprache neben anderer Sprache       0.11      0.50      0.18         2
+                Muttersprache nur Deutsch       0.50      0.06      0.11        17
+        Spracherwerb im erwachsenen Alter       0.00      0.00      0.00         1
+Spracherwerb im jungen Alter außerhalb DE       0.20      0.50      0.29         2
+       Spracherwerb im jungen Alter in DE       0.17      1.00      0.29         1
+
+                                 accuracy                           0.17        23
+                                macro avg       0.20      0.41      0.17        23
+                             weighted avg       0.40      0.17      0.13        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 0.1, 'svc__kernel': 'rbf'}
+                    precision    recall  f1-score   support
+
+ beide Elternteile       0.00      0.00      0.00         1
+      beide keinen       0.78      0.39      0.52        18
+nur ein Elternteil       0.25      0.25      0.25         4
+
+          accuracy                           0.35        23
+         macro avg       0.34      0.21      0.26        23
+      weighted avg       0.65      0.35      0.45        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                                                                                                precision    recall  f1-score   support
+
+ Geld reichte für ein Teil der grundlegenden Bedürfnisse mit Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+Geld reichte für ein Teil der grundlegenden Bedürfnisse ohne Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+                                               Geld reichte für grundlegende Bedürfnisse knapp       0.00      0.00      0.00         3
+          Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben mit Finanzplanung       0.20      0.08      0.12        12
+         Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben ohne Finanzplanung       0.00      0.00      0.00         1
+                                         Geld reichte für grundlegende Bedürfnisse vollständig       0.00      0.00      0.00         5
+
+                                                                                      accuracy           
+ 													                 0.04        23
+                                                                                     macro avg       0.03      0.01      0.02        23
+                                                                                  weighted avg       0.10      0.04      0.06        23
+
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 0.1, 'svc__kernel': 'rbf'}
+              precision    recall  f1-score   support
+
+  Hochschule       0.20      0.14      0.17         7
+ Universität       0.67      0.75      0.71        16
+
+    accuracy                           0.57        23
+   macro avg       0.43      0.45      0.44        23
+weighted avg       0.52      0.57      0.54        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                                                                                  precision    recall  f1-score   support
+
+Erziehungswissenschaften / Sozialwesen / Bildungswissenschaften / Soziale Arbeit       0.50      0.17      0.25         6
+                                                           Geisteswissenschaften       0.00      0.00      0.00         3
+                                                                         Lehramt       0.00      0.00      0.00         2
+                             Mathematik / Informatik und Ingenieurwissenschaften       0.00      0.00      0.00         3
+                   Medizin, Gesundheits- und Naturwissenschaften und Psychologie       0.00      0.00      0.00         4
+                                                                       Sonstiges       0.00      0.00      0.00         1
+                                           Sozial- und Wirtschaftswissenschaften       0.00      0.00      0.00         4
+
+                                                                        accuracy                         
+													   0.04        23
+                                                                       macro avg       0.07      0.02      0.04        23
+                                                                    weighted avg       0.13      0.04      0.07        23
+
+XML-Features. Frequenzen im Tag <sek_habitus>:
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                       precision    recall  f1-score   support
+
+       Deutsch / EU       0.95      0.90      0.92        20
+Nicht-EU / Staatenlos       0.50      0.67      0.57         3
+
+             accuracy                           0.87        23
+            macro avg       0.72      0.78      0.75        23
+         weighted avg       0.89      0.87      0.88        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 0.01, 'svc__kernel': 'rbf'}
+                                  precision    recall  f1-score   support
+
+Einwanderungs- geschichte tiefer       0.22      0.67      0.33         3
+  beide Elternteile eingewandert       1.00      0.50      0.67         2
+     ein Elternteil eingewandert       0.00      0.00      0.00         1
+                 nicht vorhanden       1.00      0.36      0.53        14
+             nur TN eingewandert       0.00      0.00      0.00         3
+
+                        accuracy                           0.35        23
+                       macro avg       0.44      0.30      0.31        23
+                    weighted avg       0.72      0.35      0.42        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                                                    precision    recall  f1-score   support
+
+                       Bildungsausländer*innen, AT       1.00      0.67      0.80         3
+                            Bildungsinländer*innen       0.95      1.00      0.98        20
+
+                                          accuracy                           0.96        23
+                                         macro avg       0.98      0.83      0.89        23
+                                      weighted avg       0.96      0.96      0.95        23
+
+Top 10 Features für Klasse 'Bildungsausländer*innen, AT':
+TFIDF<sek_habitus typ="indiv" thema="akkulturation">: 0.5009
+TFIDF<sek_habitus typ="indiv" thema="sprache">: 0.4171
+TFIDF<sek_habitus typ="indiv" thema="themenwechsel nach milieu">: 0.2996
+TFIDF<sek_habitus typ="indiv" thema="auftreten">: 0.2446
+TFIDF<sek_habitus typ="indiv" thema="zurueckhaltung">: 0.1661
+TFIDF<sek_habitus typ="indiv" thema="selbstermaechtigung">: 0.1585
+TFIDF<sek_habitus typ="indiv" thema="schuldgefuehle">: 0.1584
+TFIDF<sek_habitus typ="indiv" thema="vorlieben">: 0.1334
+TFIDF<sek_habitus typ="indiv" thema="finanzen genuss">: 0.1276
+TFIDF<sek_habitus typ="indiv" thema="schwierigkeiten im gespraech">: 0.1153
+
+Top 10 Features für Klasse 'Bildungsinländer*innen':
+TFIDF<sek_habitus typ="indiv" thema="sprache">: 0.4534
+TFIDF<sek_habitus typ="indiv" thema="zurueckhaltung">: 0.2824
+TFIDF<sek_habitus typ="indiv" thema="themenwechsel nach milieu">: 0.2431
+TFIDF<sek_habitus typ="indiv" thema="schuldgefuehle">: 0.1805
+TFIDF<sek_habitus typ="indiv" thema="besitz">: 0.1753
+TFIDF<sek_habitus typ="indiv" thema="auftreten">: 0.1613
+TFIDF<sek_habitus typ="indiv" thema="finanzen belastung">: 0.1353
+TFIDF<sek_habitus typ="indiv" thema="unsicherheit bzgl akzeptanz">: 0.1089
+TFIDF<sek_habitus typ="indiv" thema="schwierigkeiten im gespraech">: 0.1039
+TFIDF<sek_habitus typ="indiv" thema="finanzen genuss">: 0.0933
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 1, 'svc__kernel': 'rbf'}
+                                           precision    recall  f1-score   support
+
+      Muttersprache neben anderer Sprache       0.00      0.00      0.00         2
+                Muttersprache nur Deutsch       0.86      0.35      0.50        17
+        Spracherwerb im erwachsenen Alter       1.00      1.00      1.00         1
+Spracherwerb im jungen Alter außerhalb DE       0.14      0.50      0.22         2
+       Spracherwerb im jungen Alter in DE       0.25      1.00      0.40         1
+
+                                 accuracy                           0.39        23
+                                macro avg       0.45      0.57      0.42        23
+                             weighted avg       0.70      0.39      0.45        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                    precision    recall  f1-score   support
+
+ beide Elternteile       0.12      1.00      0.22         1
+      beide keinen       0.75      0.17      0.27        18
+nur ein Elternteil       0.00      0.00      0.00         4
+
+          accuracy                           0.17        23
+         macro avg       0.29      0.39      0.16        23
+      weighted avg       0.59      0.17      0.22        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'scale', 'svc__kernel': 'poly'}
+                                                                                                precision    recall  f1-score   support
+
+ Geld reichte für ein Teil der grundlegenden Bedürfnisse mit Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+Geld reichte für ein Teil der grundlegenden Bedürfnisse ohne Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+                                               Geld reichte für grundlegende Bedürfnisse knapp       0.00      0.00      0.00         3
+          Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben mit Finanzplanung       0.69      0.92      0.79        12
+         Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben ohne Finanzplanung       1.00      1.00      1.00         1
+                                         Geld reichte für grundlegende Bedürfnisse vollständig       0.00      0.00      0.00         5
+
+                                                                                      accuracy           
+ 													                 0.52        23
+                                                                                     macro avg       0.28      0.32      0.30        23
+                                                                                  weighted avg       0.40      0.52      0.45        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+              precision    recall  f1-score   support
+
+  Hochschule       0.29      0.57      0.38         7
+ Universität       0.67      0.38      0.48        16
+
+    accuracy                           0.43        23
+   macro avg       0.48      0.47      0.43        23
+weighted avg       0.55      0.43      0.45        23
+
+Optimale Parameter: {'svc__C': 1, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                                                                                  precision    recall  f1-score   support
+
+Erziehungswissenschaften / Sozialwesen / Bildungswissenschaften / Soziale Arbeit       0.00      0.00      0.00         6
+                                                           Geisteswissenschaften       0.18      0.67      0.29         3
+                                                                         Lehramt       0.00      0.00      0.00         2
+                             Mathematik / Informatik und Ingenieurwissenschaften       0.00      0.00      0.00         3
+                   Medizin, Gesundheits- und Naturwissenschaften und Psychologie       0.33      0.25      0.29         4
+                                                                       Sonstiges       0.00      0.00      0.00         1
+                                           Sozial- und Wirtschaftswissenschaften       0.00      0.00      0.00         4
+
+                                                                        accuracy                         
+													   0.13        23
+                                                                       macro avg       0.07      0.13      0.08        23
+                                                                    weighted avg       0.08      0.13      0.09        23
+
+XML-Features. TF-IDF im Tag <sek_habitus>:
+Optimale Parameter: {'svc__C': 0.1, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                       precision    recall  f1-score   support
+
+       Deutsch / EU       0.95      0.90      0.92        20
+Nicht-EU / Staatenlos       0.50      0.67      0.57         3
+
+             accuracy                           0.87        23
+            macro avg       0.72      0.78      0.75        23
+         weighted avg       0.89      0.87      0.88        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 0.01, 'svc__kernel': 'rbf'}
+                                  precision    recall  f1-score   support
+
+Einwanderungs- geschichte tiefer       0.22      0.67      0.33         3
+  beide Elternteile eingewandert       1.00      0.50      0.67         2
+     ein Elternteil eingewandert       0.00      0.00      0.00         1
+                 nicht vorhanden       1.00      0.36      0.53        14
+             nur TN eingewandert       0.00      0.00      0.00         3
+
+                        accuracy                           0.35        23
+                       macro avg       0.44      0.30      0.31        23
+                    weighted avg       0.72      0.35      0.42        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                                                    precision    recall  f1-score   support
+
+                       Bildungsausländer*innen, AT       1.00      0.67      0.80         3
+                            Bildungsinländer*innen       0.95      1.00      0.98        20
+
+                                          accuracy                           0.96        23
+                                         macro avg       0.98      0.83      0.89        23
+                                      weighted avg       0.96      0.96      0.95        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 1, 'svc__kernel': 'rbf'}
+                                           precision    recall  f1-score   support
+
+      Muttersprache neben anderer Sprache       0.00      0.00      0.00         2
+                Muttersprache nur Deutsch       0.86      0.35      0.50        17
+        Spracherwerb im erwachsenen Alter       1.00      1.00      1.00         1
+Spracherwerb im jungen Alter außerhalb DE       0.14      0.50      0.22         2
+       Spracherwerb im jungen Alter in DE       0.25      1.00      0.40         1
+
+                                 accuracy                           0.39        23
+                                macro avg       0.45      0.57      0.42        23
+                             weighted avg       0.70      0.39      0.45        23
+
+Optimale Parameter: {'svc__C': 10, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+                    precision    recall  f1-score   support
+
+ beide Elternteile       0.12      1.00      0.22         1
+      beide keinen       0.75      0.17      0.27        18
+nur ein Elternteil       0.00      0.00      0.00         4
+
+          accuracy                           0.17        23
+         macro avg       0.29      0.39      0.16        23
+      weighted avg       0.59      0.17      0.22        23
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'scale', 'svc__kernel': 'poly'}
+                                                                                                precision    recall  f1-score   support
+
+ Geld reichte für ein Teil der grundlegenden Bedürfnisse mit Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+Geld reichte für ein Teil der grundlegenden Bedürfnisse ohne Möglichkeit zu Sonderersparnissen       0.00      0.00      0.00         1
+                                               Geld reichte für grundlegende Bedürfnisse knapp       0.00      0.00      0.00         3
+          Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben mit Finanzplanung       0.69      0.92      0.79        12
+         Geld reichte für grundlegende Bedürfnisse und zusätzliche Ausgaben ohne Finanzplanung       1.00      1.00      1.00         1
+                                         Geld reichte für grundlegende Bedürfnisse vollständig       0.00      0.00      0.00         5
+
+                                                                                      accuracy           
+													                 0.52        23
+                                                                                     macro avg       0.28      0.32      0.30        23
+                                                                                  weighted avg       0.40      0.52      0.45        23
+
+
+Optimale Parameter: {'svc__C': 100, 'svc__gamma': 'scale', 'svc__kernel': 'rbf'}
+              precision    recall  f1-score   support
+
+  Hochschule       0.29      0.57      0.38         7
+ Universität       0.67      0.38      0.48        16
+
+    accuracy                           0.43        23
+   macro avg       0.48      0.47      0.43        23
+weighted avg       0.55      0.43      0.45        23
+
+Optimale Parameter: {'svc__C': 1, 'svc__gamma': 'scale', 'svc__kernel': 'linear'}
+                                                                                  precision    recall  f1-score   support
+
+Erziehungswissenschaften / Sozialwesen / Bildungswissenschaften / Soziale Arbeit       0.00      0.00      0.00         6
+                                                           Geisteswissenschaften       0.18      0.67      0.29         3
+                                                                         Lehramt       0.00      0.00      0.00         2
+                             Mathematik / Informatik und Ingenieurwissenschaften       0.00      0.00      0.00         3
+                   Medizin, Gesundheits- und Naturwissenschaften und Psychologie       0.33      0.25      0.29         4
+                                                                       Sonstiges       0.00      0.00      0.00         1
+                                           Sozial- und Wirtschaftswissenschaften       0.00      0.00      0.00         4
+
+                                                                        accuracy                         
+													   0.13        23
+                                                                       macro avg       0.07      0.13      0.08        23
+                                                                    weighted avg       0.08      0.13      0.09        23

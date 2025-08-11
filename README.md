@@ -31,19 +31,19 @@ Die gesamten durch diese Umfrage gewonnenen Antworten (N=115) dürfen aufgrund v
 ## Annotation der Antworten in XML
 
 Alle Antworten wurden manuell im XML annotiert, angelehnt an das Kodieren in der qualitativen Inhaltsanalyse. Folgende Tags wurden eingesetzt:
-- <prim_habitus typ=n thema=m> 
+- &lt;prim_habitus typ=n thema=m&gt; 
 
 n ∈ {"indiv", "gruppe"}
 
 m ∈ {Bildung", "Finanzen", "Besitz", "Lebensbedingungen", "Umgang mit Gegenstaenden", "Sprache", "Ostdeutschland", "Auftreten"}
 
-- <sek_habitus typ=n thema=m>
+- &lt;sek_habitus typ=n thema=m&gt;
 
 n ∈ {"indiv", "gruppe"}
 
 m ∈ {"Genuegsamkeit", "Sprache", "Auftreten", "Zurueckhaltung", "akademische Praegung", "Selbstermaechtigung", "Schwierigkeiten im Gespraech", "Themenwechsel nach Milieu", "Neid", "Unsicherheit bzgl Akzeptanz", "Akkulturation", "Schuldgefuehle", "Privileg-Bewusstsein","Besitz", "Vorlieben", "Klassenscham", "Finanzen Belastung", "Finanzen Genuss"}
 
-- <nicht_passung bezogen_auf=n differenz=m thema=l>
+- &lt;nicht_passung bezogen_auf=n differenz=m thema=l&gt;
 
 n ∈ {"Herkunftsm", "Aufstiegsm"}
 
@@ -51,17 +51,17 @@ m ∈ {"nach Fach", "nach Bildungseinichtung"}
 
 l ∈ {"Finanzen",  "Bildung", "fehlende Zugehoerigkeit", "Urlaub", "Aspirationen", "Lebenserfahrung","Besitz", "administr Ablaeufe",  "Sprache", "Wohnsituation", "bewegende Themen",  "Vorlieben","Beziehungen", "Frauenbilder",  "Auftreten", "Verstaendnis zur aktuellen Lebensweise"} 
 
-- <habitus_beibehalten auspraegung=n>
+- &lt;habitus_beibehalten auspraegung=n&gt;
 
 n ∈ {"Authentizitaet", "Hysteresis-Effekt", "Umgebung mit vergleichbarem Werdegang"}
 
-- <habitus_nach_aufstieg typ=n zugehoerigkeit=m>
+- &lt;habitus_nach_aufstieg typ=n zugehoerigkeit=m&gt;
 
 n ∈ {"gesp", "flex"}
 
 m ∈ {"keine", "beide Milieus", "Umgebung mit vergleichbarem Werdegang", "eher Aufstiegsm", "eher Herkunftsm"}
 
-- <entfremdung typ=n>
+- &lt;entfremdung typ=n&gt;
 
 n ∈ {"keine", "ambiv", "vollst", "subj"}
 

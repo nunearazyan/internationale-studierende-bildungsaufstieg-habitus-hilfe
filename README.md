@@ -10,15 +10,39 @@ Ziel dieses Projektes ist es, zur Schließung dieser Forschungslücke beizutrage
 2) Welche konkreten Hilfestellungen und Unterstützungsangebote sind förderlich im Umgang mit der Anpassung an das neue soziale Umfeld und der Transformation des Habitus? 
 
 ## Datnerhebung
-Für diese Arbeit wurden Daten mittels einer Online-Umfrage erhoben. Die Umfrage bestand aus drei Teilen. Im ersten Teil wurden soziodemografische Merkmale erhoben. Dies waren Staatsangehörigkeit (deutsch, EU, Nicht-EU), den Migrationshintergrund, den Aufenthaltstitel (ja/nein, ggf. mit Angabe des Paragraphen nach AufenthG), den Erwerb der deutschen Sprache (Muttersprache oder nicht, Alter und Ort des Spracherwerbs), den Bildungsstatus der Eltern, die finanzielle Situation im Elternhaus (indirekt über eine Einschätzung, wofür das Geld reichte), den Hochschultyp (Universität oder Hochschule; staatlich, privat oder kirchlich) sowie die studierte Fachrichtung. 
+Für diese Arbeit wurden Daten mittels einer Online-Umfrage erhoben. Die Umfrage bestand aus drei Teilen. Im ersten Teil wurden soziodemografische Merkmale erhoben. Dies waren_ 
+- Staatsangehörigkeit (deutsch, EU, Nicht-EU)
+- Migrationshintergrund, den Aufenthaltstitel (ja/nein, ggf. mit Angabe des Paragraphen nach AufenthG)
+- Erwerb der deutschen Sprache (Muttersprache oder nicht, Alter und Ort des Spracherwerbs)
+- Bildungsstatus der Eltern
+- finanzielle Situation im Elternhaus (indirekt über eine Einschätzung, wofür das Geld reichte)
+- Hochschultyp (Universität oder Hochschule; staatlich, privat oder kirchlich) 
+- studierte Fachrichtung. 
 Der zweite Block bestand aus offenen Fragen zur Wahrnehmung und Ausprägung des gespaltenen Habitus. Er war in fünf thematische Abschnitte gegliedert, die jeweils mehrere Fragen enthielten. Zunächst wurde nach der subjektiven Wahrnehmung des Übergangs in das neue soziale Umfeld gefragt sowie nach Unterschieden zum Herkunftsmilieu. Im Anschluss daran ging es um individuelle Anpassungsstrategien an das akademische Milieu. Weitere Fragen thematisierten beobachtete Unterschiede im Verhalten, Denken, in der Körpersprache und Ausdrucksweise in Interaktionen mit Menschen aus dem Herkunfts- bzw. Aufstiegsmilieu. Danach wurde erhoben, in welchem Milieu sich die Teilnehmer\*innen heimisch fühlen und in welchen Situationen sie den gespaltenen Habitus besonders stark wahrnehmen. Abschließend wurden Einschätzungen dazu erfragt, ob die Teilnehmer\*innen ihre Persönlichkeit nach dem Bildungsaufstieg als stimmig oder eher widersprüchlich erleben und inwiefern. 
 Im dritten, abschließenden Block wurden Fragen zu Unterstützungsangeboten gestellt: Welche konkreten Hilfsangebote die Teilnehmer\*innen genutzt haben oder sich wünschen würden, die ihnen geholfen hätten, den Alltag zwischen verschiedenen sozialen Welten und ggf. verschiedenen Kulturen zu bewältigen, sich schneller anzupassen oder potentielle innere Widersprüche zu hemmen. Auch hier sollten die Teilnehmer\*innen begründen, warum eine bestimmte Maßnahme hilfreich war oder hilfreich sein könnte.
 
-Die durch diese Umfrage gewonnenen Antworten dürfen aufgrund von Datenschutzbestimmungen jedoch nicht veröffentlicht werden. Damit der Code aber trotzdem reproduzierbar bleibt, wurde eine Datei erstellt, die dieselbe Struktur aufweist, wie die Rohdatei mit den Antworten aus der Umfrage, jedoch mit einem Blidtext gefüllt ist.
+Die gesamten durch diese Umfrage gewonnenen Antworten (N=115) dürfen aufgrund von Datenschutzbestimmungen jedoch nicht veröffentlicht werden. Damit der Code aber trotzdem reproduzierbar bleibt, wurde eine Datei erstellt, die Antworten von Personen (N=9) enthält, die explizit zugestimmt haben, dass ihre Antworten auf GitHub veröffentlicht werden.
 
 ## Annotation der Antworten in XML
 
 Alle Antworten wurden manuell im XML annotiert, angelehnt an das Kodieren in der qualitativen Inhaltsanalyse. Folgende Tags wurden eingesetzt:
+- <prim_habitus typ=n thema=m> 
+n ∈ {"indiv", "gruppe"}
+m ∈ {Bildung", "Finanzen", "Besitz", "Lebensbedingungen", "Umgang mit Gegenstaenden", "Sprache", "Ostdeutschland", "Auftreten"}
+- <sek_habitus typ=n thema=m>
+n ∈ {"indiv", "gruppe"}
+m ∈ {"Genuegsamkeit", "Sprache", "Auftreten", "Zurueckhaltung", "akademische Praegung", "Selbstermaechtigung", "Schwierigkeiten im Gespraech", "Themenwechsel nach Milieu", "Neid", "Unsicherheit bzgl Akzeptanz", "Akkulturation", "Schuldgefuehle", "Privileg-Bewusstsein","Besitz", "Vorlieben", "Klassenscham", "Finanzen Belastung", "Finanzen Genuss"}
+- <nicht_passung bezogen_auf=n differenz=m thema=l>
+n ∈ {"Herkunftsm", "Aufstiegsm"}
+m ∈ {"nach Fach", "nach Bildungseinichtung"}
+l ∈ {"Finanzen",  "Bildung", "fehlende Zugehoerigkeit", "Urlaub", "Aspirationen", "Lebenserfahrung","Besitz", "administr Ablaeufe",  "Sprache", "Wohnsituation", "bewegende Themen",  "Vorlieben","Beziehungen", "Frauenbilder",  "Auftreten", "Verstaendnis zur aktuellen Lebensweise"} 
+- <habitus_beibehalten auspraegung=n>
+n ∈ {"Authentizitaet", "Hysteresis-Effekt", "Umgebung mit vergleichbarem Werdegang"}
+- <habitus_nach_aufstieg typ=n zugehoerigkeit=m>
+n ∈ {"gesp", "flex"}
+m ∈ {"keine", "beide Milieus", "Umgebung mit vergleichbarem Werdegang", "eher Aufstiegsm", "eher Herkunftsm"}
+- <entfremdung typ=n>
+n ∈ {"keine", "ambiv", "vollst", "subj"}
 
 ## Feature-Extraktion
 
@@ -35,11 +59,46 @@ skalierte Frequenz jedes Annotationstags pro Antwort
 - skalierte Frequenz und TF-IDF jedes Annotationstags der Gruppe <nicht_passung>
 - skalierte Frequenz und TF-IDF jedes für Annotationstags der Gruppe <sek_habitus>
 
+## Klassifizierung
+
+Die Features wurden mittels Folgenden Klassifikatoren den erhobenen soziodemografischen Merkmalen zugeordnet: Support Vector Classifier, Logistic Regression, Random Forest, BERT, CatBoost.
+Es hat sichgezeigt, dass baumbasierte Klassifikatiren eine bessere Performanz liefern. CatBoost ist für unbalancierte Daten besonders gut geeignet.
+
+## Ergebnisse
+
+Es zeigten sich deutliche Unterschiede in der habituellen Anpassung zwischen internationalen Student\*innen aus Nicht-EU-Ländern und deutschen bzw. europäischen Student\*innen. Staatsangehörigkeit (Abb. 1-5) und Aufenthaltsstatus (Abb. 6-8) erwiesen sich hierbei als die signifikantesten Prädiktoren für derartige Unterschiede. Diese beiden Merkmale überschneiden sich häufig, da rechtliche Regelungen zum Aufenthaltsstatus in der Regel an die Staatsangehörigkeit gekoppelt sind. Konkret bedeutet dies, dass Deutsche und EU-Bürger\*innen keinen Aufenthaltstitel benötigen, während Nicht-EU-Bürger\*innen und Staatenlose nur mit einem entsprechenden Aufenthaltstitel in Deutschland studieren dürfen. In den meisten Fällen handelt es sich bei letzteren um internationale Student\*innen, die gleichzeitig Bildungsausländer\*innen sind.
+![Abb. 1-5](Ergebnisse_Staatsang.png)
+![Abb. 6-8](Ergebnisse_Aufenth.png)
+
+Darüber hinaus konnten Gruppen identifiziert werden, die besonders für die entsprechende Gruppe charakteristische Merkmale aufweisen und daher nahezu fehlerfrei klassifiziert werden können. Dazu gehören Teilnehmer\*innen, deren beide Eltern keinen Hochschulabschluss besitzen, Teilnehmer\*innen, die allein nach Deutschland eingereist sind, sowie Teilnehmer\*innen, die Deutsch als Fremdsprache im jungen Alter außerhalb Deutschlands gelernt haben. Im Falle beider letzten Gruppen handelt es sich überwiegend ebenfalls um internationale Student\*innen.
+
+Bildungsaufsteigende internationale Student\*innen sind einer dreifachen Belastung ausgesetzt: Neben der Erbringung akademischer Leistungen und der sozialen Anpassung an das Aufstiegsmilieu – Herausforderungen, die auch für deutsche Bildungsaufsteiger\*innen relevant sind – müssen sie zusätzlich einen umfassenden Akkulturationsprozess bewältigen. Dies geht aus einer näheren Betrachtung der aussagekräftigsten Features hervor: der Inhalte des XML-Tags <sek_habitus> sowie der Wörter mit dem höchsten Informationsgewinn (Tab. 1-3).
+![Tab. 1](Sek_habitus_nach_Staatsang.png)
+![Tab. 2](Woerter_IG_nach_Staatsang.png)
+![Tab. 3](Sek_habitus_nach_Aufenth.png)
+
+Ferner wurde festgestellt, dass internationale Student\*innen (Tab. 4) sowie Student\*innen mit zugewanderten Eltern (Tab. 5) häufiger einen flexiblen Habitus aufweisen, was ihnen hilft, ein Gefühl von Zugehörigkeit zum Aufstiegsmilieu zu entwickeln. Diese Habitusflexibilität korreliert positiv mit Mehrsprachigkeit (Tab. 6) und Migrationserfahrung (Tab. 5) der Student\*innen.
+![Tab. 4](Habitus_Zugeh_nach_Staatsang.png)
+![Tab. 5](Habitus_Zugeh_nach_MigrationsH.png)
+![Tab. 6](Habitus_Zugeh_nach_Spracherwerb.png)
+
+Als zentrale Unterstützungsmaßnahme äußerten alle befragten Gruppen den Wunsch nach einer gezielten Vernetzung mit anderen bildungsaufsteigenden Student\*innen aus ähnlichen Herkunftsmilieus. Selbsthilfegruppen stellen dabei die beliebteste Form dieser Begegnung dar, gefolgt von Betreuung seitens fortgeschrittener Student\*innen aus ähnlichen Verhältnissen. Darüber hinaus wurde in einigen Forschungen zu Hilfestellungen bereits verdeutlichter Bedarf an spezifischen Unterstützungsangeboten für internationale Student\*innen bestätigt. Insbesondere lässt sich dieser im Bereich der Akkulturation verorten und betrifft die sprachliche Förderung sowie die Vermittlung von Wissen über die akademische Kultur in Deutschland. Auch eine intensivere Unterstützung bei der Integration in den deutschen Arbeitsmarkt wurde als notwendig identifiziert.
+
+Auf methodischer Ebene erwies sich die in dieser Arbeit erprobte und bislang selten genutzte Kombination einer manuellen, an die qualitative Inhaltsanalyse angelehnten Annotation mit maschineller Klassifizierung als vielversprechend. Die Nutzung von XML-Tags und deren Attributen als Klassifizierungsgrundlage führte zu besseren Ergebnissen als maschinell erzeugte Features. 
+
 ## Inhalt
 
 - Projektbeschreibng
 - Lizenz (CC-BY-SA) s. hier: https://creativecommons.org/licenses/by-sa/4.0/deed.de
-- 
+- Umfragedaten, dargestellt als Antworten von 9 Personen, die explizit einer Veöffentlichung auf GitHub zugestimmt haben ("umfragedaten_gefiltert.csv")
+- Skript für die visuelle Darsellung der Stichprobenbeschreibung ("visualisierung_stichprobenbeschreibung.py", resultierende Datei "tabelle1_tokens_nach_merkmalen.xlsx")
+- Aufbereitung der Umfragedaten als XML-Datei ("datenaufbereitung.py", resultierende Datei "umfrage_gelabelt.xml")
+- Annotierte Umfeagedaten ("umfrage_gelabelt_annotiert.xml")
+- Übersicht der Annotation ("annotation_uebersicht.py")
+- Feature-Extraktion mit zuvor erfolgter Lemmatisierung ("lemmatisierung.py", "feature_extraktion.py", resultierende Dateien "umfrage_lemm.csv", "umfrage_featured.csv")
+- Skripte für Klassifizierung und Visualisierung der Klassifizierungsergebnisse ("klassifikator_svm.py", "klassifikator_lr.py", "klassifikator_rf.py", "klassifikator_bert.py", "klassifikator_cb.py", resultierende Dateien "SVM_Ergebnisse.txt", "LR_Ergebnisse.txt", "RF_Ergebnisse.txt", "BERT_Ergebnisse.txt", "CB_Ergebnisse.txt")
+- Übersicht über Hilfestellungen ("visualisierung_hilfestellungen.py", resultierende Datei "hilfestellungen_uebersicht.xlsx")
+- Übersicht über Habitus nach dem Bildungsaufstieg der Teilnehmer\*innen und ihrer Entfremdung nach soziodemografischen Merkmalen ("habitus_entfremdung_counts.py", resultierende Datei "habitus_entfremdung_counts.py")
 
 ## Zitierempfehlung
 

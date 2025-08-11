@@ -1,8 +1,11 @@
 # (Gespaltener) Habitus internationaler Bildungsaufsteiger\*innen aus Nicht-EU-Ländern im Vergleich zu weiteren bildungsbenachteiligten Student\*innengruppen in Deutschland. Ausprägungen, Differenzen, Lösungen
 
 Internationale Student\*innen aus Nicht-EU-Ländern machen rund 15 % der gesamten Student\*innenschaft an deutschen Hochschulen aus (Kroher et al. 2023, S. 32). Die Mehrheit verbleibt nach dem Studium langfristig in Deutschland (DAAD & DZHW 2024, S. 51). Etwa 80 % der internationalen Absolvent\*innen deutscher Hochschulen nehmen nach dem Studium eine Vollzeit-, Teilzeit- oder selbstständige Tätigkeit auf (Bruder et al. 2015, S. 10). Rund ein Drittel verfügt über ein Aufenthaltsrecht zu Erwerbszwecken (Statistisches Bundesamt 2022, S. 6). Internationale Student\*innen gelten daher als ein wichtiger Faktor zur Deckung des Fachkräftemangels in Deutschland (Hoffmeyer-Zlotnik & Grote 2018, S. 70). Das Studium an einer deutschen Hochschule wird seitens des deutschen Staates gezielt als Strategie eingesetzt, um hochqualifizierte Fachkräfte zu gewinnen und im Land zu halten (Schittenhelm & Schäfer 2024, S. 533).
+
 Gleichzeitig sehen viele internationale Student\*innen das Studium in Deutschland als Chance, eigene Lebensqualität zu verbessern und sozial aufzusteigen. Neben politischen, humanitären, wirtschaftlichen und demografischen Situationen in ihren Herkunftsländern (DAAD & DZHW 2024, S. 41) nennen sie als Gründe für diese Bildungsentscheidung auch die hohe Lebensqualität, die stabile Wirtschaft, das entwickelte Bildungssystem sowie die Aussicht auf bessere berufliche Perspektiven (ebd., S. 52 f.).
+
 Trotz der statistischen Relevanz dieser Gruppe bleibt sie in der wissenschaftlichen Forschung weitgehend unterrepräsentiert oder wird nur am Rande thematisiert (Ebert & Heublein 2017, S. 2). In amtlichen Statistiken werden internationale Student\*innen oft nicht separat ausgewiesen, sondern häufig unter der Kategorie „Student\*innen mit Migrationshintergrund“ subsumiert. Während Student\*innen mit Migrationshintergrund in der Bildungsungleichheitsforschung zunehmend berücksichtigt werden, bleiben die spezifischen Herausforderungen internationaler Student\*innen oftmals unbeachtet (Falk et al. 2022, S. 14). 
+
 Ziel dieses Projektes ist es, zur Schließung dieser Forschungslücke beizutragen und explorativ zu untersuchen, wie sich der gespaltene Habitus in dieser Gruppe im Vergleich zu anderen Gruppen von Student\*innen, die ebenfalls von Bildungsbenachteiligung betroffen sind (etwa Student\*innen aus nicht-akademischen Elternhäusern oder Student\*innen aus armutsbetroffenen Familien), äußert und welche Strategien sie zur Bewältigung entwickeln. Es wird nach Korrelationen zwischen den Merkmalen, die sich auf die Herkunft der Student\*innen beziehen, und den konkreten Ausprägungen des gespaltenen Habitus gesucht.
 
 ## Forschungsfrage
@@ -18,7 +21,9 @@ Für diese Arbeit wurden Daten mittels einer Online-Umfrage erhoben. Die Umfrage
 - finanzielle Situation im Elternhaus (indirekt über eine Einschätzung, wofür das Geld reichte)
 - Hochschultyp (Universität oder Hochschule; staatlich, privat oder kirchlich) 
 - studierte Fachrichtung. 
+
 Der zweite Block bestand aus offenen Fragen zur Wahrnehmung und Ausprägung des gespaltenen Habitus. Er war in fünf thematische Abschnitte gegliedert, die jeweils mehrere Fragen enthielten. Zunächst wurde nach der subjektiven Wahrnehmung des Übergangs in das neue soziale Umfeld gefragt sowie nach Unterschieden zum Herkunftsmilieu. Im Anschluss daran ging es um individuelle Anpassungsstrategien an das akademische Milieu. Weitere Fragen thematisierten beobachtete Unterschiede im Verhalten, Denken, in der Körpersprache und Ausdrucksweise in Interaktionen mit Menschen aus dem Herkunfts- bzw. Aufstiegsmilieu. Danach wurde erhoben, in welchem Milieu sich die Teilnehmer\*innen heimisch fühlen und in welchen Situationen sie den gespaltenen Habitus besonders stark wahrnehmen. Abschließend wurden Einschätzungen dazu erfragt, ob die Teilnehmer\*innen ihre Persönlichkeit nach dem Bildungsaufstieg als stimmig oder eher widersprüchlich erleben und inwiefern. 
+
 Im dritten, abschließenden Block wurden Fragen zu Unterstützungsangeboten gestellt: Welche konkreten Hilfsangebote die Teilnehmer\*innen genutzt haben oder sich wünschen würden, die ihnen geholfen hätten, den Alltag zwischen verschiedenen sozialen Welten und ggf. verschiedenen Kulturen zu bewältigen, sich schneller anzupassen oder potentielle innere Widersprüche zu hemmen. Auch hier sollten die Teilnehmer\*innen begründen, warum eine bestimmte Maßnahme hilfreich war oder hilfreich sein könnte.
 
 Die gesamten durch diese Umfrage gewonnenen Antworten (N=115) dürfen aufgrund von Datenschutzbestimmungen jedoch nicht veröffentlicht werden. Damit der Code aber trotzdem reproduzierbar bleibt, wurde eine Datei erstellt, die Antworten von Personen (N=9) enthält, die explizit zugestimmt haben, dass ihre Antworten auf GitHub veröffentlicht werden.
@@ -27,21 +32,37 @@ Die gesamten durch diese Umfrage gewonnenen Antworten (N=115) dürfen aufgrund v
 
 Alle Antworten wurden manuell im XML annotiert, angelehnt an das Kodieren in der qualitativen Inhaltsanalyse. Folgende Tags wurden eingesetzt:
 - <prim_habitus typ=n thema=m> 
+
 n ∈ {"indiv", "gruppe"}
+
 m ∈ {Bildung", "Finanzen", "Besitz", "Lebensbedingungen", "Umgang mit Gegenstaenden", "Sprache", "Ostdeutschland", "Auftreten"}
+
 - <sek_habitus typ=n thema=m>
+
 n ∈ {"indiv", "gruppe"}
+
 m ∈ {"Genuegsamkeit", "Sprache", "Auftreten", "Zurueckhaltung", "akademische Praegung", "Selbstermaechtigung", "Schwierigkeiten im Gespraech", "Themenwechsel nach Milieu", "Neid", "Unsicherheit bzgl Akzeptanz", "Akkulturation", "Schuldgefuehle", "Privileg-Bewusstsein","Besitz", "Vorlieben", "Klassenscham", "Finanzen Belastung", "Finanzen Genuss"}
+
 - <nicht_passung bezogen_auf=n differenz=m thema=l>
+
 n ∈ {"Herkunftsm", "Aufstiegsm"}
+
 m ∈ {"nach Fach", "nach Bildungseinichtung"}
+
 l ∈ {"Finanzen",  "Bildung", "fehlende Zugehoerigkeit", "Urlaub", "Aspirationen", "Lebenserfahrung","Besitz", "administr Ablaeufe",  "Sprache", "Wohnsituation", "bewegende Themen",  "Vorlieben","Beziehungen", "Frauenbilder",  "Auftreten", "Verstaendnis zur aktuellen Lebensweise"} 
+
 - <habitus_beibehalten auspraegung=n>
+
 n ∈ {"Authentizitaet", "Hysteresis-Effekt", "Umgebung mit vergleichbarem Werdegang"}
+
 - <habitus_nach_aufstieg typ=n zugehoerigkeit=m>
+
 n ∈ {"gesp", "flex"}
+
 m ∈ {"keine", "beide Milieus", "Umgebung mit vergleichbarem Werdegang", "eher Aufstiegsm", "eher Herkunftsm"}
+
 - <entfremdung typ=n>
+
 n ∈ {"keine", "ambiv", "vollst", "subj"}
 
 ## Feature-Extraktion
@@ -67,17 +88,20 @@ Es hat sichgezeigt, dass baumbasierte Klassifikatiren eine bessere Performanz li
 ## Ergebnisse
 
 Es zeigten sich deutliche Unterschiede in der habituellen Anpassung zwischen internationalen Student\*innen aus Nicht-EU-Ländern und deutschen bzw. europäischen Student\*innen. Staatsangehörigkeit (Abb. 1-5) und Aufenthaltsstatus (Abb. 6-8) erwiesen sich hierbei als die signifikantesten Prädiktoren für derartige Unterschiede. Diese beiden Merkmale überschneiden sich häufig, da rechtliche Regelungen zum Aufenthaltsstatus in der Regel an die Staatsangehörigkeit gekoppelt sind. Konkret bedeutet dies, dass Deutsche und EU-Bürger\*innen keinen Aufenthaltstitel benötigen, während Nicht-EU-Bürger\*innen und Staatenlose nur mit einem entsprechenden Aufenthaltstitel in Deutschland studieren dürfen. In den meisten Fällen handelt es sich bei letzteren um internationale Student\*innen, die gleichzeitig Bildungsausländer\*innen sind.
+
 ![Abb. 1-5](Ergebnisse_Staatsang.png)
 ![Abb. 6-8](Ergebnisse_Aufenth.png)
 
 Darüber hinaus konnten Gruppen identifiziert werden, die besonders für die entsprechende Gruppe charakteristische Merkmale aufweisen und daher nahezu fehlerfrei klassifiziert werden können. Dazu gehören Teilnehmer\*innen, deren beide Eltern keinen Hochschulabschluss besitzen, Teilnehmer\*innen, die allein nach Deutschland eingereist sind, sowie Teilnehmer\*innen, die Deutsch als Fremdsprache im jungen Alter außerhalb Deutschlands gelernt haben. Im Falle beider letzten Gruppen handelt es sich überwiegend ebenfalls um internationale Student\*innen.
 
 Bildungsaufsteigende internationale Student\*innen sind einer dreifachen Belastung ausgesetzt: Neben der Erbringung akademischer Leistungen und der sozialen Anpassung an das Aufstiegsmilieu – Herausforderungen, die auch für deutsche Bildungsaufsteiger\*innen relevant sind – müssen sie zusätzlich einen umfassenden Akkulturationsprozess bewältigen. Dies geht aus einer näheren Betrachtung der aussagekräftigsten Features hervor: der Inhalte des XML-Tags <sek_habitus> sowie der Wörter mit dem höchsten Informationsgewinn (Tab. 1-3).
+
 ![Tab. 1](Sek_habitus_nach_Staatsang.png)
 ![Tab. 2](Woerter_IG_nach_Staatsang.png)
 ![Tab. 3](Sek_habitus_nach_Aufenth.png)
 
 Ferner wurde festgestellt, dass internationale Student\*innen (Tab. 4) sowie Student\*innen mit zugewanderten Eltern (Tab. 5) häufiger einen flexiblen Habitus aufweisen, was ihnen hilft, ein Gefühl von Zugehörigkeit zum Aufstiegsmilieu zu entwickeln. Diese Habitusflexibilität korreliert positiv mit Mehrsprachigkeit (Tab. 6) und Migrationserfahrung (Tab. 5) der Student\*innen.
+
 ![Tab. 4](Habitus_Zugeh_nach_Staatsang.png)
 ![Tab. 5](Habitus_Zugeh_nach_MigrationsH.png)
 ![Tab. 6](Habitus_Zugeh_nach_Spracherwerb.png)
